@@ -58,4 +58,13 @@ const createpost = (req, res) => {
   res.json({ message: 'POST_CREATED' })
 }
 
-module.exports = { createUser, createpost }
+const haveaLookpost = (req, res) => {
+  const viewpost = req.params.viewpost
+
+  console.log('test', '포스팅목록')
+  res.json({ message: 'POST_VIEW' })
+}
+
+module.exports = { createUser, createpost, haveaLookpost }
+
+//주석처리 단축키 CTRL + K + C 주석해제 단축키 CTRL + K + U

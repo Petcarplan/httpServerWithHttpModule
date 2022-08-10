@@ -15,5 +15,5 @@ app.post('/post', createpost)
 const server = http.createServer(app)
 
 server.listen(8000, () => {
-  console.log('연결완료!!')
+  console.log('통신성공!!')
 })
