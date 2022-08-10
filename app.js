@@ -55,7 +55,7 @@ const createpost = (req, res) => {
   })
   console.log(posts.push)
 
-  res.json({ message: 'USER_CREATED' })
+  res.json({ message: 'POST_CREATED' })
 }
 
 module.exports = { createUser, createpost }
